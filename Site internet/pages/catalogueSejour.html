@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link href="../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/catalogueSejourStyle.css">
+    <script src="../scripts/script.js"></script>
+
+    <title>Catalogue de Séjours</title>
+</head>
+    <body>
+        <!--###########  NAV MENU  ###########-->
+        <div id="navModal">
+            <div id="navMenu">
+                <a class="itemNavMenu" id="homeMenu">Nos Séjours Sportifs</a>
+                <a class="itemNavMenu" id="myRequestsMenu">Hébergements</a>
+                <a class="itemNavMenu" id="ourOffersMenu">À Propos De Nous</a>
+            </div>
+        </div>
+
+        <header>
+            <!-- CHECKBOX -->
+            <label id="checkboxMenu" class="container">
+                <input id="navMenuCheckbox" onclick="switchNavModal()" type="checkbox" >
+                <span class="checkmark" ></span>
+            </label>
+            <div id="brand" href="#">
+                <div id="brandContainer">
+                    <p id="textBrand">Sport koh</p>
+                    <img src="../ressources/Logos/LOGO-200px.png" width="38px">
+                </div>
+            </div>
+            
+            <nav>
+                <a href="#">Nos Séjours Sportifs</a>
+                <a href="#">Hébergements</a>
+                <a href="#">À Propos De Nous</a>
+                
+            </nav>
+            <div id="contactButtonBox">
+            <button class="buttonColorBleu1 buttonRegular">
+                Contactez nous !
+                                    
+            </button>
+            </div>
+        </header>
+
+
+
+        <main>
+            <div id="headTitle" >
+                <!-- Le titre avec la montagne en arriere plan-->
+                <div id="boxTitle">
+                    <img id="verticalLine" src="../ressources/svg/verticalLine.svg">
+                    <h1>Découvrez tous nos séjours</h1>
+                </div>
+            
+            <figure class="banniere">
+                <img src="../ressources/images/montagne2t.jpg" alt="Deux personnes devant d'immenses montagnes"width="100%">
+                <figcaption></figcaption>
+            </figure>
+
+            <div>
+                <div class = "lieu_sejour">
+                    <figure class="alpes">
+                        <img src="../ressources/images/hoodHouse.png" alt="cabane en bois avec montagnes"width="278" height="191">
+                        <figcaption>A la montagne dans les Alpes</figcaption>
+                    </figure>
+                
+                    <figure class="atlantique">
+                        <img src="../ressources/images/la baule.jpg" alt="port quelque part en Atlantique"width="278" height="191">
+                        <figcaption>A la mer dans l'Atlantique</figcaption>                         
+                    </figure>
+                
+                    <figure class="mediterranee">
+                        <img src="../ressources/images/plongeur.jpg" alt="plongeur dans l'eau" width="278" height="191">
+                        <figcaption>Autour de la Méditerranée</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <section>
+                <article id="montain" class="mainBox">
+                    <div class="leftDiv">
+                        <img src="../ressources/images/montagneNeige.jpg" width="494" height="462" alt="montagnes eneigées">
+                    </div>
+                    <div class="rightDiv">
+                        <p class="styleText">Nous proposons différents Séjours Sports en montagnes. </br>Découvrez les !</p> 
+                        
+                        <button class="buttonLarge buttonColorBleu1">Découvrir les séjours -></button>
+                    </div>
+                </article>
+                <article id="foreigner" class="mainBox">
+                    <div class="leftDiv">
+                        <p class="styleText">Mais aussi des séjours à l'étrangers</p>
+                        <button class="buttonLarge buttonColorVert1">Découvrir les séjours -></button>
+                    </div>
+                    <div class="rightDiv">
+                        <img src="../ressources/images/ville_grece2.jpg" width="439" height="439" alt="Ruelle blanche à mykonos">
+                    </div>
+                    
+                    
+                </article>
+                <article id="kayak" class="mainBox">
+                    <div class="leftDiv">
+                        <img src="../ressources/images/kayak.jpg" width="439" height="412" alt="deux personnes qui font du kayak">
+                    </div> 
+                    <div class="rightDiv">
+                        <p class="styleText">Ou encore à la mer</p>
+                        <button class="buttonLarge buttonColorBleu1">Découvrir les séjours -></button>
+                    </div>
+                    
+                </article>
+            </section>
+
+            <div id="contactDiv" class="">
+                <!-- Invitation à nous contacter-->
+                <div class="leftDiv">
+                    <p class="styleText">Le meilleur endroit pour nous connaitre et en discuter.</p>
+                    <button class="buttonLarge buttonColorBleu1">Contactez nous !<img src="../ressources/svg/arrow.svg"></button>
+                </div>
+                <div class="rightDiv">
+                    <img class="imgCard" id="imgCard3" src="../ressources/svg/contact.svg">
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <section id="boxFooter">
+
+                <div id="brandBox">
+                    <img src="../ressources/Logos/LOGO-200px-white.png">
+                </div>
+                <hr>
+                <article>
+                    <h3>À propos</h3>
+                    <p>L’association Sport Koh vous propose des séjours de qualité avec des activité très variées. L’association souhaites promouvoir les valeurs du sport et des activités de découverte qui favorisent le bien-être, l’équilibre et le vivre-ensemble. Notre objectif est de développer les échanges, les rencontres et le partage chez toutes les tranches d’âges.</p>
+                    <button class="buttonLarge buttonColorBleu1">Contactez nous !<img src="../ressources/svg/arrow.svg"></button>
+                </article>
+            </section>
+            <section id="MentionAndCookies">
+                <a>
+                    Mention Légale
+                </a>
+                <a>
+                    Politique de Cookies
+                </a>
+            </section>
+    </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

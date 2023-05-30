@@ -1,0 +1,477 @@
+@font-face {
+    font-family: MerriweatherSans;
+    src: url('../ressources/Polices/MerriweatherSans-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Roboto-Flex;
+    src: url('../ressources/Polices/Packs/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../ressources/Polices/Packs/Roboto/Roboto-Black.ttf');
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------ HEADER ------------------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+#brand {
+    
+    
+    
+    
+    flex-basis: 20%;
+}
+#textBrand {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118.6%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+    color: black;
+}
+#brandContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+#contactButtonBox {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#contactButtonBox button {
+    
+}
+
+nav a {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 118.6%;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2C6489;
+}
+
+
+
+/* -------------------------------------- NAV MENU ------------------------------------- */
+#navModal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: -900px;
+    top: 50px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Black w/ opacity */
+    /* Transition */
+    transition: left 300ms;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.itemNavMenu {
+    padding: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    color: black;
+}
+.itemNavMenu:hover {
+    color: #2C6489;
+}
+
+.itemNavMenu:active {
+    color: #50799E;
+}
+
+
+@media screen and (min-width: 501px){
+    #navModal {display: none;}
+
+}
+
+/*############# La checkbox du menu Burger #################*/
+
+.container {
+    display: none;
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url('../ressources/svg/MenuBurgerV2.svg');
+    background-color: #2C6489;
+    
+  }
+  
+
+/* -------------------------------------- HEADER MOBILE ------------------------------------- */
+
+@media screen and (max-width: 500px) {
+    header #brand {
+        flex-basis: 90%;
+    }
+
+    header #brand #brandContainer {
+        justify-content: center;
+    }
+
+    header #contactButtonBox {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* Hide checkbox*/
+    #checkboxMenu {
+        display: block;
+    }
+
+}
+
+
+/* ---------------------------------------- ~ FIN HEADER ~ ---------------------------------- */
+
+/* --------------------------- BUTTON ---------------------- */
+
+.buttonRegular {
+    font-family: 'MerriweatherSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 14px;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.buttonLarge {
+    font-family: 'MerriweatherSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 14px;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 22px 32px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.buttonColorVert1 {
+    background-color: #719344;
+}
+.buttonColorVert1:hover {
+    background-color: #A9BC3B;
+}
+
+
+.buttonColorBleu1 {
+    background-color: #2C6489;
+}
+
+.buttonColorBleu1:hover {
+    background-color: #50799E;
+}
+
+/* ---------------------------------------- ~ FIN BUTTON ~ ---------------------------------- */
+
+
+/* ------------------------------------------ MAIN ------------------------------------- */
+
+main {
+
+}
+
+/* _________________________________ TITLE FOR DESKTOP____________________________*/
+#headTitle #boxTitle {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    color: white;
+    max-width: 40%;
+    padding: 2em 3em;
+
+    background-color: #2C6489;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#headTitle #boxTitle h1 {
+    overflow-wrap: break-word;
+}
+
+#headTitle #boxTitle #verticalLine {
+    width: 12px;
+}
+
+#headTitle #boxTitle h1 {
+    margin: 0;
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 640;
+    font-size: 4.5em;
+    line-height: 118.6%;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-variation-settings: 'opsz' 20;
+}
+
+/* _________________________________ TITLE FOR MOBILE____________________________*/
+
+@media screen and (max-width: 730px) {
+    #headTitle #boxTitle {
+        padding: 1em 1em;
+        padding-right: 0.5em;
+        gap: 1em;
+        top: 20%;
+        right: 5%;
+    }
+
+    #headTitle #boxTitle #verticalLine {
+        width: 3px;
+    }
+
+    #headTitle #boxTitle h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+/* ---------------------------------------- ~ FIN MAIN ~ ---------------------------------- */
+
+
+
+
+/* ------------------------------------------ FOOTER ------------------------------------- */
+
+footer {
+    background-image: url(../ressources/svg/footerSvgV2.svg);
+    height: 703px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 50px;
+    background-size: cover;
+    
+}
+
+#boxFooter {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+#boxFooter #brandBox {
+    flex-basis: 42%;
+    display: flex;
+    justify-content: center;
+}
+
+#boxFooter article {
+    flex-basis: 42%;
+}
+
+#boxFooter hr {
+
+}
+
+
+#boxFooter #brandBox img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+footer hr {
+    border: solid 2px white;
+}
+
+footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+footer article h3 {
+    font-family: 'Roboto-Flex';
+    color: #A9BC3B;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 0;
+    align-self: flex-start;
+}
+
+footer article p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    font-family: 'Roboto-Flex';
+    text-align: left;
+}
+
+footer #MentionAndCookies {
+    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto-Flex';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 13px;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+/* -------------------------------------- FOOTER MOBILE ------------------------------------- */
+
+@media screen and (max-width: 730px) {
+    footer {
+        background-image: url(../ressources/svg/footerPortableSvg.svg);
+        background-size: cover;
+    }
+
+    #boxFooter {
+        flex-direction: column-reverse;
+    }
+
+    #boxFooter #brandBox img {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    footer hr {
+        
+        width: 200px;
+    }
+
+    footer article {
+        padding: 15px;
+    }
+    
+    footer article h3 {
+        
+        font-weight: 800;
+        font-size: 14px;
+        
+    }
+    
+    footer article p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        
+    }
+
+    footer #MentionAndCookies {
+        
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 13px;
+        gap: 30px;
+    }
+}

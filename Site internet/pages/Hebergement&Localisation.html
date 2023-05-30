@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <link href="../style/style.css" rel="stylesheet">
+        <link href="../style/heberloca.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../scripts/script.js"></script>
+
+    </head>
+    <body>
+        <!--###########  NAV MENU  ###########-->
+        <div id="navModal">
+            <div id="navMenu" class="styletext">
+                <a class="itemNavMenu" id="homeMenu">Nos Séjours Sportifs</a>
+                <a class="itemNavMenu" id="myRequestsMenu">Hébergements</a>
+                <a class="itemNavMenu" id="ourOffersMenu">À Propos De Nous</a>
+            </div>
+         </div>
+
+        <header>
+            <!-- CHECKBOX -->
+            <label id="checkboxMenu" class="container">
+                <input id="navMenuCheckbox" onclick="switchNavModal()" type="checkbox" >
+                <span class="checkmark" ></span>
+            </label>
+            <div id="brand" href="#">
+                <div id="brandContainer">
+                    <p id="textBrand">Sport koh</p>
+                    <img src="../ressources/Logos/LOGO-200px.png" width="38px">
+                </div>
+            </div>
+            
+            <nav>
+                <a href="#">Nos Séjours Sportifs</a>
+                <a href="#">Hébergements</a>
+                <a href="#">À Propos De Nous</a>
+                
+            </nav>
+            <div id="contactButtonBox">
+            <button class="buttonColorBleu1 buttonRegular">
+                Contactez nous !                       
+            </button>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- L'idée c'est que tu dupliques le base.html, tu renommes ce nouveau fichier par le nom de ta pages par exemple et que tu dev ton main en dessous de ce message, dans la balise Main.
+            Pour ton css, créé un fichier .css dans le dossier style avec le nom que tu veux et tu le link dans la balise head. -->
+
+
+
+            <div id="headTitle" >
+                <div id="boxTitle">
+                    <img id="verticalLine" src="../ressources/svg/verticalLine.svg">
+                    <h1>Hebergement au Village D’argent</h1>
+                </div>
+                
+                <!-- Le titre avec la montagne en arriere plan-->
+                
+            </div>
+            
+
+
+
+            <div id="bandeauHaut">
+                <h2>Description de l’hébergement</h2>
+                <p>
+                    Le village sportif se situe dans le golfe d’Ajaccio, à 300 m de la plage d’Argent renommée pour ses eaux limpides. Bordée par le maquis, vous profiterez d’un environnement naturel où la végétation méditerranéenne se déploie à perte de vue.
+                </p>
+            </div>
+
+
+
+
+            
+            <div id="textContainer">
+                <div id="petiteBoite">
+                    <div id="transpG">
+                        <h2>Equipements de l’hébergement </h2>
+                        <p>
+                            Base nautique à 10mn à pied de votre hébergement <br><br>Piscine extérieure <br><br>Salle de remise en forme
+                        </p>
+                    </div>
+                    <div id="transpD">
+                        <h2>Plus D’infos </h2>
+                        <p>
+                            Type d’Hébergement: bungalows de 4<br> personnes (possibilité de 2 avec supplément) <br><br>Restauration: self-service ou panier <br>Repas sur demande
+                        </p>
+                    </div>
+                </div>
+
+                <div id="grandeBoite">
+                    <div id="transpFull">
+                        <h2>Localisation </h2>
+                        <p>
+                            Anse de Verghiaau sud du golfe d’Ajaccio <br><br>Pietrosella dans la Corse du Sud en France <br><br>Grande plage de la Méditerranée avec son sable blanc et ses eaux turquoises
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+            <div class="bandeauSep">
+                <h1>
+                    Carte interactive
+                </h1>
+            </div>
+
+
+            <div id="mapContainer">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27349.158124318776!2d8.875470755915842!3d41.51950522505174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12dbcbb7ee7d0b2d%3A0xdb95d7cbd36025a4!2sPlage%20d&#39;Argent!5e0!3m2!1sfr!2sfr!4v1672332613826!5m2!1sfr!2sfr"  style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe >
+            </div>
+
+
+
+
+            <div class="bandeauSep">
+                <h1>
+                    La plage aux mille reflets
+                </h1>
+            </div>
+
+            <div id="galeriePhoto">
+                <div id="galerieContainer">
+                    <img id="galerie" src="../ressources/HeberLoca/Img_inte_bunga1.jpeg">
+                    <button id="prev" onclick="prevImage()">&#10094;</button>
+                    <button id="next" onclick="nextImage()">&#10095;</button>
+                </div>               
+            </div>    
+            
+            
+
+            
+            <div id="contactDiv" class="mainBox">
+                <!-- Invitation à nous contacter-->
+                <div class="leftDiv">
+                    <p class="styleText">Le meilleur endroit pour nous connaitre et en discuter.</p>
+                    <button class="buttonLarge buttonColorBleu1">Contactez nous !<img src="../ressources/svg/arrow.svg"></button>
+                </div>
+                <div class="rightDiv">
+                    <img class="imgCard" id="imgCard3" src="../ressources/svg/contact.svg">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+                <section id="boxFooter">
+
+                    <div id="brandBox">
+                        <img src="../ressources/Logos/LOGO-200px-white.png">
+                    </div>
+                    <hr>
+                    <article>
+                        <h3>À propos</h3>
+                        <p>L’association Sport Koh vous propose des séjours de qualité avec des activité très variées. L’association souhaites promouvoir les valeurs du sport et des activités de découverte qui favorisent le bien-être, l’équilibre et le vivre-ensemble. Notre objectif est de développer les échanges, les rencontres et le partage chez toutes les tranches d’âges.</p>
+                        <button class="buttonRegular buttonColorBleu1">Conactez nous</button>
+                    </article>
+                </section>
+                <section id="MentionAndCookies">
+                    <a>
+                        Mention Légale
+                    </a>
+                    <a>
+                        Politique de Cookies
+                    </a>
+                </section>
+        </footer>
+    </body>
+    <script>
+        switchNavModal();
+    </script>
+</html>

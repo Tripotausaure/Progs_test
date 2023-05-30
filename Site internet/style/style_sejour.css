@@ -1,0 +1,357 @@
+@font-face {
+    font-family: MerriweatherSans;
+    src: url('../ressources/Polices/MerriweatherSans-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Roboto-Flex;
+    src: url('../ressources/Polices/Packs/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../ressources/Polices/Packs/Roboto/Roboto-Black.ttf');
+}
+
+body, h4 {
+    margin: 0; 
+    background-color: rgb(255, 255, 255);
+} 
+table {
+	color: #466dd7;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+td , th {
+	border: 1px solid black;
+}
+section, #info1, #info2, #info3, #info4, #info5, #info6 , #tabprog , #tabtarif , #buttonSolo{
+	padding: 0.5em;
+	border-radius: 0.5em;
+	margin: 2em;	
+}
+#info1, #info2, #info3, #info4, #info5, #info6 , #tabprog , #tabtarif , #buttonSolo{
+	color: rgb(255, 255, 255);
+	font : 1.5em "Arial", sans-serif;
+}
+
+#boxTitleTransparent {
+	position: absolute;
+    top: 50%;
+    right: 5%;
+    color: white;
+    max-width: 50%;
+    padding: 2em 3em;
+
+	background-color: rgba(255, 255, 255,0);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+#headTitle #boxTitleTransparent h1 {
+    overflow-wrap: break-word;
+}
+
+#headTitle #boxTitleTransparent #verticalLine {
+    width: 12px;
+}
+
+#headTitle #boxTitleTransparent h1 {
+    margin: 0;
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 640;
+    font-size: 5.5em;
+    line-height: 118.6%;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-variation-settings: 'opsz' 20;
+}
+
+#headTitle #largeImg {
+    width: 100%;
+}
+
+.div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: -1;
+	flex-wrap : wrap ;
+}
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	margin: 5em;
+	padding: 0;
+}
+
+
+#grossbwat {
+	padding: 0 5% 5%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	order: 2;
+}
+#inf_bwat1 {
+	width: 40%;
+}
+
+#inf_bwat2 {
+	margin-top: 10%;
+	width: 60%;
+}
+#titre {
+	color: rgb(255, 255, 255);
+	font-family: Source Serif 4;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: left;
+	background-image: url("../ressources/backgrounds/BackCalanque.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	height: 30em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#ressej{
+	margin-left: 5%;
+}
+
+#resume {
+	color: rgb(255, 255, 255);
+	font : 1.5em "Arial", sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: left;
+	align-content: left;
+	text-align: left;
+	background-image: url("../ressources/images/SmallTransition.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 10;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.text_resu{
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#infos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1;
+	align-content: center;
+	background-image: url("../ressources/backgrounds/BackPlongeDesktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#info1 {
+	order: 0;
+	background-color: rgba(255, 255, 255,0.15);
+}
+#info2 {
+	background-color: rgba(255, 255, 255,0.15);
+}
+#info3 {
+	background-color: rgba(255, 255, 255,0.15);
+}
+#info4 {
+	background-color: rgba(255, 255, 255,0.15);
+}
+#info5 {
+	background-color: rgba(255, 255, 255,0.15);
+}
+#info6 {
+	display: flex;
+	background-color: rgba(255, 255, 255,0.15);
+	flex-direction: row;
+}
+
+#info6txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: top;
+	align-content: top;
+	margin: 0;
+	max-height: 5em;
+	width: 70%;
+}
+#info61txt {
+	margin: 0;
+	margin-bottom: 5%;
+}
+#info62txt{
+	font-size: 0.8em;
+	margin: 0;
+}
+#button6 {
+	margin: 3% 0 0 0;
+	display: flex;
+	line-height: normal;
+	font-size: 0.5em;
+	width: 30%;
+	line-height: 10px;
+	height: 100%;
+}
+#buttonSolo {
+	display: flex;
+	margin-left: 30%;
+	line-height: normal;
+}
+#tabprog {
+    background-color: rgb(255, 255, 255);
+}
+
+#tabtarif {
+    background-color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 860px) {
+    main {
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+    }
+	#info1, #info2, #info3, #info4, #info5, #info6 , #tabprog , #tabtarif , #resume {
+		color: rgb(255, 255, 255);
+		font : 1em "Arial", sans-serif;
+		width: 80%;
+	}
+	#infos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		align-content: center;
+		background-image: url("../ressources/backgrounds/BackPlongeMobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 3000px;
+		width: 100%;
+		margin-top: 0;
+	}
+	#grossbwat {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		order: 2;
+		margin-bottom: 10%;
+	}
+	#inf_bwat1 , #inf_bwat2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 0;
+	}
+	#info1{
+		margin-top: 30%;
+		width: 80%;
+		font-size: 0.9em;
+	}
+	#resume {
+		color: rgb(255, 255, 255);
+		font : 1em "Arial", sans-serif;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: left;
+		align-content: left;
+		text-align: left;
+		background-image: url("../ressources/svg/smallTransitionMobileSvg.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		z-index: 10;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#ressej{
+		margin-left: 10%;
+	}
+	#headTitle #boxTitleTransparent {
+        padding: 1em 1em;
+        padding-right: 0.5em;
+        gap: 1em;
+        top: 30%;
+        right: 5%;
+    }
+	#info6 {
+		display: flex;
+		background-color: rgba(255, 255, 255,0.15);
+		flex-direction: column;
+	}
+
+	#info6txt {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+		max-height: 5em;
+		width: 100%;
+	}
+	#button6 {
+		margin: 5% 0 0 0;
+		display: flex;
+		font-size: 1em;
+		line-height: normal;
+		height: 5em;
+		width: 95%;
+	}
+	#buttonSolo {
+		line-height: 10px;
+		max-width: 8em;
+		max-height: 10em;
+		margin: 0 5%;
+		font-size: 1em;
+	}
+
+    #headTitle #boxTitleTransparent #verticalLine {
+        width: 3px;
+    }
+
+    #headTitle #boxTitleTransparent h1 {
+        font-size: 1.2em;
+    }
+}

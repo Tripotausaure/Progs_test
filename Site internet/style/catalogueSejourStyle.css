@@ -1,0 +1,211 @@
+
+/* ------------------ Sejour Box ------------------- */
+
+
+#headTitle #boxTitle {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    max-width: 40%;
+    padding: 2em 3em;
+
+    background-color: #719344;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#headTitle #boxTitle h1 {
+    overflow-wrap: break-word;
+}
+
+#headTitle #boxTitle #verticalLine {
+    width: 5px;
+}
+
+#headTitle #boxTitle h1 {
+    margin: 0;
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 640;
+    font-size: 4.5em;
+    line-height: 118.6%;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-variation-settings: 'opsz' 20;
+}
+
+.imgCard{
+    height: 100%;
+    width: 100%;
+}
+
+div.lieu_sejour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    z-index: 10;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+
+}
+
+div div.lieu_sejour {
+    margin:0;
+    border:0;
+    background-image:url(../ressources/images/rewave1.svg);
+    background-size:cover;
+    z-index: 20;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.lieu_sejour>figure{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 13px;
+}
+
+div.lieu_sejour img{
+    border-radius:10%;
+}
+
+div.lieu_sejour figure{
+    flex-basis: 200px;
+}
+
+div.lieu_sejour figcaption{
+    color: white;
+    text-align: center;
+}
+
+div figure figcaption{
+    word-wrap: normal;
+    font-size: 1.2em;
+    font-weight:bold;
+    
+}
+figure.banniere{
+    margin:0px;
+}
+
+#foreigner>.leftDiv{
+    background-color: #2C6489;
+    color : white;
+}
+
+.mainBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.styleText {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 523;
+    font-size: 4em;
+    display: flex;
+    text-align: center;
+    padding: 1em 1em;
+    margin: 0;
+}
+/* --------------------- BOX ------------------ */
+
+.leftDiv, .rightDiv {
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .mainBox, #contactDiv {
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+}
+
+/* ----------------- Mobile ---------------------*/
+
+@media screen and (max-width: 860px) {
+    main .mainBox, #contactDiv {
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .leftDiv, .rightDiv {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .styleText {
+        font-family: 'Source Serif 4';
+        font-style: normal;
+        font-weight: 523;
+        font-size: 2em;
+        display: flex;
+        text-align: center;
+        padding: 1em 1em;
+        margin: 0;
+    }
+
+    #imgCard1 {
+        width: 60%;
+    }
+    #foreigner {
+        flex-direction: column-reverse;
+    }
+    ul.lieu_sejour>li img{
+        border-radius:10%;
+        width: 100%;
+    }
+    div.lieu_sejour img{
+        border-radius:10%;
+        width: 75%;
+        height: 50%;
+    }
+    div.lieu_sejour figcaption{
+        font-size: 50%;
+        
+    }
+    @media screen and (max-width: 730px) {
+        #headTitle #boxTitle {
+            padding: 1em 1em;
+            padding-right: 0.5em;
+            gap: 1em;
+            top: 20%;
+            right: 5%;
+        }
+    
+        #headTitle #boxTitle #verticalLine {
+            width: 2px;
+        }
+    
+        #headTitle #boxTitle h1 {
+            font-size: 1.2em;
+        }
+    }
+  
+}

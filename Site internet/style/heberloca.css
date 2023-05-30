@@ -1,0 +1,381 @@
+@font-face {
+  font-family: MerriweatherSans;
+  src: url('../ressources/Polices/MerriweatherSans-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: Roboto-Flex;
+  src: url('../ressources/Polices/Packs/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf');
+}
+@font-face {
+  font-family: Roboto-Black;
+  src: url('../ressources/Polices/Packs/Roboto/Roboto-Black.ttf');
+}
+
+/* ------------------------------------------ GENERAL ------------------------------------- */
+
+/* ------------------------------------------ MAIN ------------------------------------- */
+
+/* _________________________________ TITLE FOR DESKTOP____________________________*/
+#headTitle #boxTitle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: white;
+  max-width: 40%;
+  padding: 2em 3em;
+
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+#headTitle #boxTitle h1 {
+  overflow-wrap: break-word;
+}
+
+#headTitle #boxTitle #verticalLine {
+  width: 7px;
+}
+
+#headTitle #boxTitle h1 {
+  margin: 0;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 640;
+  font-size: 4.5em;
+  line-height: 118.6%;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-variation-settings: 'opsz' 20;
+}
+
+/* _________________________________ TITLE FOR MOBILE____________________________*/
+
+@media screen and (max-width: 730px) {
+  #headTitle #boxTitle {
+      padding: 1em 1em;
+      padding-right: 0.5em;
+      gap: 1em;
+      top: 20%;
+      right: 5%;
+  }
+
+  #headTitle #boxTitle #verticalLine {
+      width: 3px;
+  }
+
+  #headTitle #boxTitle h1 {
+      font-size: 2em;
+  }
+}
+
+/*------------------------------------------------------------------------------------------*/
+main {
+  position: relative; /* pour permettre aux éléments enfants d'être positionnés par rapport à main */
+}
+
+#headTitle {
+  position: relative; /* pour permettre au titre d'être positionné par rapport à l'image */
+  background-image: url('../ressources/HeberLoca/img_fond_titre_desktop.png'); /* image desktop */
+  background-size: cover; /* pour adapter l'image à la taille de la div */
+  background-repeat: no-repeat; /* pour ne pas répéter l'image */
+  height: 500px; /* pour donner une hauteur à la div */
+}
+
+@media screen and (max-width: 730px) {
+  #headTitle {
+      background-image: url('../ressources/HeberLoca/img_fond_titre_mobile.png'); /* image mobile */
+      height: 300px;
+  }
+}
+
+/* ------------------------------------------ HAUT ------------------------------------- */
+#bandeauHaut {
+	font : 1.5em "Arial", sans-serif;
+  color: white;
+  background-color: #2C6489;
+  padding: 1em;
+  text-align: center;
+}
+@media screen and (max-width: 730px) {
+  #bandeauHaut {
+      font-size: 1em;
+  }
+}
+/* ------------------------------------------ INFOS ------------------------------------- */
+
+#textContainer {
+  color: rgb(255, 255, 255);
+	font : 1.2em "Arial", sans-serif;
+  position: relative; /* pour permettre aux éléments enfants d'être positionnés par rapport à textContainer */
+  background-image: url('../ressources/HeberLoca/img_fond_princ_desktop2.png'); /* image desktop */
+  background-size: cover; /* pour adapter l'image à la taille de la div */
+  background-repeat: no-repeat; /* pour ne pas répéter l'image */
+  height: 1000px; /* pour donner une hauteur à la div */
+}
+
+#petiteBoite {
+  padding-top: 200px;
+  display: flex; /* pour aligner les éléments transpG et transpD */
+  justify-content: space-evenly;
+  align-items: flex-start; /* pour aligner les éléments en haut de la boîte */
+}
+#grandeBoite {
+  padding-top: 100px;
+  display: flex; /* pour aligner les éléments transpG et transpD */
+  justify-content: space-evenly;
+  align-items: flex-start; /* pour aligner les éléments en haut de la boîte */
+}
+
+#transpG, #transpD, #transpFull {
+  backdrop-filter: blur(4px);
+  color: white;
+  border-radius: 1em; /* pour courber les coins */
+  padding: 1em;
+}
+#transpG {
+  order: -1; /* pour positionner transpG à gauche */
+}
+#transpD {
+  order: 1; /* pour positionner transpD à droite */
+}
+@media screen and (max-width: 730px) {
+  #textContainer {
+    font-size: 1em;
+    background-image: url('../ressources/HeberLoca/img_fond_princ_mobile.png'); /* image mobile */
+  }
+  #petiteBoite {
+    flex-direction: column;
+    align-items: center;
+  }
+  #grandeBoite {
+    flex-direction: column;
+    align-items: center;
+  }
+  #transpG, #transpD, #transpFull {
+    padding: 0.5em;
+  }
+  #transpG {
+    order: 0; /* pour positionner transpG au milieu */
+  }
+  #transpD {
+    order: 0; /* pour positionner transpD au milieu */
+  }
+}
+/* ------------------------------------------ BAS ------------------------------------- */
+
+.bandeauSep {
+	font : 1.5em "Arial", sans-serif;
+  color: #FFF;
+  background-color: #2C6489;
+  padding: 1em;
+  text-align: center;
+}
+@media screen and (max-width: 730px) {
+  .bandeauSep {
+      font-size: 1em;
+  }
+}
+
+/* ---------------- GOOGLE MAPS ---------------- */
+
+#mapContainer {
+  justify-content: center;
+  display: flex; /* pour centrer les éléments enfants en hauteur */
+  align-items: center; /* pour centrer les éléments enfants */
+  margin-top: 30px; /* pour l'espace en haut */
+  margin-bottom: 30px; /* pour l'espace en bas */
+}
+
+#map {
+  width: 80%; /* pour occuper toute la largeur de la div parent */
+  height: 500px; /* pour occuper toute la hauteur de la div parent */
+  margin: 0; /* pour annuler les marges par défaut */
+}
+
+@media screen and (max-width: 730px) {
+  map {
+      height: 40%;
+  }
+} 
+
+/* ---------------- GALERIE PHOTO ---------------- */
+ 
+#galeriePhoto {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#galerieContainer {
+  display: inline-block;
+  position: relative;
+}
+
+#galerie {
+  display: block;
+  margin: 0 auto;
+}
+
+#nav {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#nav span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  background-color: #ccc;
+}
+
+#nav .active {
+  background-color: #333;
+}
+
+#galerieContainer .prev,
+#galerieContainer .next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#galerieContainer .prev {
+  left: 10px;
+}
+
+#galerieContainer .next {
+  right: 10px;
+}
+@media screen and (max-width: 730px) {
+  #galerie {
+      width: 90%;
+      height: auto;
+  }
+  #galerieContainer {
+      display: block;
+  }
+  #nav {
+      display: none;
+  }
+  #galerieContainer .prev,
+  #galerieContainer .next {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      margin: 10px auto;
+      top: initial;
+      left: initial;
+      right: initial;
+      transform: none;
+  }
+}
+  
+
+/* ------------------------- CONTACT ------------------------- */
+.styleText {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 523;
+  font-size: 4em;
+  display: flex;
+  text-align: center;
+  padding: 1em 1em;
+  margin: 0;
+}
+
+main .mainBox, #contactDiv {
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+}
+.leftDiv, .rightDiv {
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#sejourDiv {
+    background-color: #F2F6FB;
+}
+.imgCard {
+    height: 100%;
+    width: 100%;
+}
+
+#heberDiv {
+    background-color: #2C6489;
+    color: white;
+}
+
+#contactDiv {
+    background-color: #FFF;
+}
+
+.styleText {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 523;
+  font-size: 4em;
+  display: flex;
+  text-align: center;
+  padding: 1em 1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 730px) {
+  main .mainBox, #contactDiv {
+      height: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0;
+  }
+
+  .leftDiv, .rightDiv {
+  
+      display: flex;
+      flex-direction: column;
+      flex-basis: 40%;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .styleText {
+      font-family: 'Source Serif 4';
+      font-style: normal;
+      font-weight: 523;
+      font-size: 2em;
+      display: flex;
+      text-align: center;
+      padding: 1em 1em;
+      margin: 0;
+  }
+
+  #imgCard1 {
+      width: 60%;
+  }
+}
