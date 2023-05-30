@@ -1,0 +1,34 @@
+RAPPORT DES TÄCHES DE LA SAE 1.03
+
+ETUDIANTS TRAVAILLANT SUR LE PROJET:
+
+--> Ryan Troadec
+--> Timothé Picot
+--> Glenn Léon--Plévert
+
+TACHES A REALISER :
+
+--> créer un fichier en .config pour réaliser le projet
+--> réaliser une extraction d'information de régions de France données
+	afin de les ajouter dans le document
+--> réaliser un code HTML et un code CSS afin d'obtenir un rendu graphique
+	stylisé
+--> réaliser un rapport pour rendre compte de l'implication de chacun
+dans le projet
+
+REPARTITION DES TACHES :
+
+--> .config : Ryan Troadec
+--> extraction d'info : Timothé Picot et Glenn Léon--Plévert
+--> code html/css : Ryan Troadec 
+--> rapport : Glenn Léon--Plévert
+
+POUR UNE REPARTITION EN POURCENTAGE DE ;
+
+--> Ryan Troadec : 34%
+--> Timothé Picot : 33%
+--> Glenn Leon--PLevert 33%
+
+DIFFICULTE RENCONTREES :
+
+--> extraction d'information difficile, des erreurs dans les tests

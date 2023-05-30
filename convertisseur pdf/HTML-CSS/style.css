@@ -1,0 +1,213 @@
+@page { size: A4 }
+
+@media print {
+   section {
+      border: 1px solid black;
+      width: 8.26in;
+      height: 11.66in;
+      margin: 0;
+      size: A4;
+      /* change the margins as you want them to be. */
+      page-break-after: always;
+   }
+}
+
+.page {
+   size: A4;
+   margin: 0;
+   page-break-after: always;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: white;
+   margin: 0;
+   padding: 0;
+   font-family: Arial; /* police Arial */
+}
+
+section {
+   position: relative;
+   height: 100vh;
+   width: 8.26in; /* taille de la page A4 en largeur */
+   height: 11.66in; /* taille de la page A4 en hauteur */
+   margin: 0 auto; /* pour centrer horizontalement */
+   display: flex;
+   /*align-items: center; /* pour centrer verticalement */
+   justify-content: center; /* pour centrer horizontalement */
+}
+
+#page1, #page2, #page3 {
+width: 100%; /* pour s'adapter à la taille de la section */
+}
+
+
+/*------------------- pied de page -------------------*/
+#date {
+   font-size: 20px;
+   font-weight: bold;
+ }
+ #heure {
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ .bottom {
+   position: absolute;
+   bottom: 10px;
+   border: 1px solid black;
+   min-height: 5rem;
+   width: 95%;
+   border-radius: 15px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/*------------------- pied de page -------------------*/
+
+/*------------------- couverture -------------------*/
+#couverture {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   justify-content: center;
+}
+
+#couverture h1 {
+   font-size: 30pt;
+   text-decoration: underline;
+}
+
+#nomRegion {
+   width: 100%; /* pour que le titre prenne toute la largeur de la section */
+   text-align: center; /* pour centrer le titre */
+   margin-bottom: 10px; /* espace entre le titre et l'image */
+}
+
+#logoRegion {
+   width: 33vw; /* 1/3 de la page */
+}
+
+.infoCouverture {
+   width: 55vw; /* 2/3 de la page */
+   text-align: left; /* pour aligner les informations à gauche */
+}
+
+/*------------------- couverture -------------------*/
+
+/*---------------------- page 1 ----------------------*/
+#page1 h1 {
+   text-align: center;
+   margin-bottom: 20px; /* écart moyen */
+   text-decoration: underline; /* souligné */
+}
+
+#page1 h3 {
+   text-align: center;
+}
+   
+#page1 p {
+   display: -webkit-box;
+   max-height: 200px;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+   text-align: center;
+   overflow: hidden;
+   margin: 20px auto; /* pour l'espacer un peu */
+   width: 80%; /* pour qu'il prenne moins de place */
+   text-align: justify; /* pour aligner le texte à gauche et à droite */
+}
+   
+#page1 table {
+   margin: 20px auto; /* pour l'espacer un peu */
+   width: 95%; /* pour qu'il prenne moins de place */
+   table-layout: fixed; /* pour que le texte retourne à la ligne si nécessaire */
+   word-wrap: break-word; /* pour que le texte retourne à la ligne si nécessaire */
+   overflow:auto;
+}
+th, td {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 15px;
+}
+th {
+   background-color: #dddddd;
+}
+/*---------------------- page 1 ----------------------*/
+
+/*---------------------- page 2 ----------------------*/
+#page2 {
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#page2 h1 {
+   text-align: center;
+   margin-bottom: 20px; /* écart moyen */
+   text-decoration: underline; /* souligné */
+}
+
+.commercials-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   width: 100%; /* pour s'adapter à la taille de l'écran */
+}
+
+.commercial {
+   text-align: center;
+   flex: 1;
+   margin-top: 40px;
+}
+
+#page2 img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+
+
+/*---------------------- page 2 ----------------------*/
+
+/*---------------------- page 3 ----------------------*/
+
+#page3 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#page3 > div {
+   text-align: center;
+}
+   
+#QR {
+   width: 40vw; /* 1/4 de la page */
+   text-align: center; /* centrer le QR code */
+}
+   
+#page3 a {
+   display: inline-block;
+   width: 100%; /* pour que le lien prenne toute la largeur de la section */
+   text-align: center; /* centrer le lien */
+   margin-bottom: 20px; /* espace entre le lien et le QR code */
+   font-size: 40px;
+   color: black; /* couleur du lien */
+}
+
+/*---------------------- page 3 ----------------------*/

@@ -1,0 +1,49 @@
+/!\-------------------- UN SEUL SCRIPT A LANCER --------------------/!\
+
+IL NE FAUT LANCER QUE script_generation.sh
+
+/!\-------------------- UN SEUL SCRIPT A LANCER --------------------/!\
+
+/!\-------------------- IMPORTANT --------------------/!\
+
+Toutes les ressources sont générées automatiquement, 
+Veuillez déposer les nouveaux fichiers dans les dossiers prévus à cet effet.
+
+Vous devez manuellement faire:
+	
+	docker image pull bigpapoo/sae103-php
+	docker image pull bigpapoo/sae103-qrcode
+	docker image pull bigpapoo/sae103-imagick
+	docker image pull bigpapoo/sae103-html2pdf
+
+
+Ensuite mettre:
+
+	les photos des commerciaux en .svg dans Photos
+	les descriptions des régions dans textes
+	les logos des régions dans Logos
+
+Besoin de droits spéciaux, faire:
+	
+	Dans le dossier en cours:  chmod +x script_generation.sh
+	Dans le dossier HTML-CSS:  chmod +x bashpdf.sh
+	Dans le dossier Photos:    chmod +x bashphoto.sh
+	Dans le dossier PHP:       chmod +x bashphp.sh
+	Dans le dossier QR_code:   chmod +x bashqrcode.sh
+	
+
+/!\-------------------- IMPORTANT --------------------/!\
+
+/!\-------------------- DESCRIPTION FONCTIONNEMENT --------------------/!\
+
+Premièrement script_generation.sh va traiter les photos,
+Ensuite les QR codes, puis génère les maquettes,
+Puis fini par la génération des fichiers PDF.
+
+
+Pour générer l'ensemble des PDF de résultats trimestriels,
+il suffit donc de lancer script_generation.sh et de le laisser produire les documents!
+
+Ils se trouveront dans le dossier Resultats_Trimestriels.
+
+/!\-------------------- DESCRIPTION FONCTIONNEMENT --------------------/!\

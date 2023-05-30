@@ -1,0 +1,53 @@
+RAPPORT N°2 DE LA SAE1.03:
+
+ETUDIANTS TRAVAILLANT SUR LE PROJET:
+
+	-> Glenn Leon--Plevert
+	-> Timothé Picot
+	-> Ryan Troadec
+
+TACHES A SE REPARTIR :
+
+	-> Convertir en PNG et en nuances de gris à travers Docker
+	   des images en SVG 
+	   (Glenn Leon--PLevert et Ryan Troadec)
+	
+	-> Générer un QRCode afin de documenter le rendu final
+	   à l'aide de Docker 
+	   (Glenn leon-Plevert et Ryan Troadec)
+	
+	-> transformation de l'HTML en PHP 
+	   (Timothé Picot + Ryan Troadec(correction de problèmes de dernière minute)
+	
+	-> Générer un PDF d'une région renseignée auparavant en
+	   paramètre par Docker 
+	   (Glenn leon-Plevert et Ryan Troadec)
+
+	-> Création du script d'automatisation (Ryan Troadec)
+	   
+	-> une documentation de chaque script bash des PDF, QRCode
+	   et PNG expliquant leur fonctionnements (non fait) 
+	   
+	-> Le fichier regions.conf: légère modification des accents (Ryan Troadec)
+	
+	-> le LISEZMOI.txt documentant tout ce qu'il
+	   faut savoir sur les PDF (Ryan Troadec)
+	
+	-> Le fichier texte ci présent, TACHES_2.txt, servant à
+	   rendre compte de la répartition du travail dans l'équipe
+	   ainsi que l'implication de chaque membre 
+	   (Glenn leon-Plevert)
+
+POUR UN POUR9ENTAGE DE :
+
+	--> Glenn leon--plevert : 33%
+	--> Ryan Troadec : 34%
+	--> Timothé Picot : 33%
+
+DIFFICULTES RENCONTREES :
+
+	-> Les dockers nous ont pris énormément de temps à 
+	   cause de problème d'autorisations et de bug divers
+	
+	-> la conversions html php à été très complexe et à 
+	   demandé beaucoup de temps de travail au même titre que les dockers
